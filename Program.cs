@@ -16,3 +16,12 @@ string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indente
 File.WriteAllText("Arquivos/vendas.json", serializado);
 
 Console.WriteLine(serializado);
+
+string conteudoArquivo = File.ReadAllText("Arquivos/compras.json");
+
+List<Compra> listaCompra = JsonConvert.DeserializeObject<List<Compra>>(conteudoArquivo);
+
+foreach (Compra compra in listaCompra)
+{
+    Console.WriteLine($"Id: {compra.Id}, Produto: {compra.Produto}, Preço: {compra.Preco}, Data: {compra.DataCompra.ToString("dd/MM/yyyy HH:mm")}");
+}
