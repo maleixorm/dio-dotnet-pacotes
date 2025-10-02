@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Produto": "Toner 101A",
+    "Preco": 40.00,
+    "DataCompra": "2025-10-01T23:16:35.6613161-03:00"
+  },
+  {
+    "Id": 2,
+    "Produto": "Monitor AOC 22p",
+    "Preco": 789.00,
+    "DataCompra": "2025-10-01T23:16:35.6613161-03:00"
+  }
+]
